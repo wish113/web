@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vscode创建页面</title>
+</head>
+<body>
+    <div>
+        <h1>标题1</h1>
+        <p>剧版设定在第二纪元，<br />发生在电影版<strong>加粗《霍比特人》</strong>和<b>加粗《指环王》</b>之前的几千年，
+        <br />
+        会将观众带回强大<em>倾斜法力</em>成型<i>倾斜的时代,</i>
+        <br />
+        <del>删除线王</del>国繁<s>删除线荣昌盛</s>又衰败颓废，
+        <br >
+        <ins>下划线不起眼的英雄们经历了考验，</ins><u>下划线希望悬在一线，</u>
+        <br />
+        托尔金笔下最强大的反派威胁着要将黑暗覆盖天下。
+        </p>
+        <p>该剧以一个相对和平的时代为起点，<br />讲述了一群新老面孔面对中土世界的邪 恶势力重新崛起的故事。<br />从迷雾山脉最黑暗的深处，到精灵之都林顿的壮阔森林，<br />再到令人叹为观止的努曼诺尔帝国，<br />以及地图最遥远的地方，<br />这些王国和人物的遗产永世长存。</p>
+        <h2>标题2</h2>
+        <h3>标题3</h3>
+        <div>div1大盒子独占一行</div>
+        <div>div2</div>
+        <span>ew</span>
+        <span>ew</span>
+        <span>ew</span>
+        <span>ew</span>
+        <h1>练习2</h1>
+        <div>
+            <h2>图像标签</h2>
+            <img src="map.png" alt="" srcset="" />
+            <h2>图像标签alt:</h2>
+            <img src="map1.png" alt="我是alt设置的值" srcset="" />
+            <h2>图像标签鼠标放图片上的提示文字title:</h2>
+            <img src="map.png" alt="" srcset="" title="提示文字" />
+            <h2>图像标签高度</h2>
+            <img src="map.png" alt="" srcset="" height="300" />
+            <h2>图像标签宽度</h2>
+            <img src="map.png" alt="" srcset="" width="300" />
+            <h2>图像标签边框</h2>
+            <img src="map.png" alt="" srcset="" boder="20" />
+        </div>
+        <div>
+            <h2 id="two">外部超链接</h2>
+            <a href="http://www.bilibili.com" target="_self">当前窗口_self外部链接http://地址</a>
+            <h2>外部超链接</h2>
+            <a href="http://www.bilibili.com" target="_blank">新窗口_blank外部链接http://地址</a>
+            <h2 id="one">空链接</h2>
+            <a href="#"></a>
+            <h2>下载链接</h2>
+            <a href="压缩包.zip"></a>
+            <h2>网页元素链接</h2>
+            <a href="#"><img src="map.png" alt=""></a>
+            <h2>锚点链接</h2>
+            <a href="#one">空链接</a>
+            <a href="#two">外部超链接</a>
+        </div>
+        <!-- 我想喝咖啡ctrl + / -->
+        <div>
+            空&nbsp;&nbsp;格
+            小于&lt;p&gt;大于这是一个段落标签
+        </div>
+        <div>
+            <h2>表格标签：展示数据</h2>
+            <table><!-- 表格 -->
+                <tr><!-- 行标签 -->
+                    <td><!-- 单元格 -->
+                        name
+                    </td>
+                    <td><!-- 单元格 -->
+                        age
+                    </td>
+                    <td><!-- 单元格 -->
+                        sex
+                    </td>
+                </tr>
+            </table>
+            <!-- 表头单元格标签 -->
+            <table>
+                <tr>
+                    <th><!-- 表头单元格标签 文字会居中加粗-->
+                        name
+                    </th>
+                    <th><!-- 表头单元格标签 文字会居中加粗-->
+                        age
+                    </th>
+                </tr>
+            </table>
+            <!-- 表格属性 要写在table标签里面去-->
+            <!-- 对齐方式align 边框border 内容与单元格边框的距离cellpadding 单元格与单元格间距离cellspacing 宽度width 高度hight-->
+            <table></table>
+            
+            <table>
+                <!-- 表头 -->
+                <thead>
+                    <tr>
+                        <td></td>
+                    </tr>
+                </thead>
+                <!-- 主体 -->
+                <tbody>
+                    <tr>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <!-- 合并单元格 跨行合并rowspan='合并单元格的个数':用最上侧单元格为目标单元格 跨列合并colspan='合并单元格的个数'：用最左侧单元格为目标单元格-->
+        </div>
+        <div>
+            <h2>列表标签 用来布局</h2>
+            <!-- 无序列表 ul ul中只能嵌套li li 里面可以放任意标签-->
+            <ul>
+                <li></li>
+                <li></li>
+            </ul>
+            <!-- 有序列表 ol ol中只能嵌套li li 里面可以放任意标签-->
+            <ol>
+                <li></li>
+                <li></li>
+            </ol>
+            <!-- 自定义列表 dl 对名词或术语进行解析和描述-->
+            <!-- 只能嵌套dt dd  dd是对dt进行解释说明，通常一个dt有多个dd-->
+            <dl>
+                <dt></dt>
+                <dd></dd>
+            </dl>
+        </div>
+        <!-- 表单标签 -->
+        <div>
+            <h2>表单标签 收集用户信息</h2>
+            <!-- 表单域 form标签用于定义表单域，以实现用户信息的收集和传递 属性：action='url地址' 用于指定接受并处理表单数据的服务器程序的url地址；method='get/post' 用于设置表单数据的提交方式，取值为get/post; name='名称' 用于指定表单的名称，以区分同一个页面中的多个表单域-->
+            <form action="" method="get" name=""></form>
+            <!-- 表单控件 -->
+            <!-- input输入表单元素 
+            type标签：text文本框；password密码框;button定义可点击按钮；checkbox定义复选框；file定义输入字段和’浏览‘按钮，供文件上传；hidden定义隐藏的输入字段；image定义图像形式的提交按钮；radio定义单选按钮,必须具有相同的name；reset定义重置按钮必须具有相同的name；submit定义提交按钮-->
+            <!-- name标签用户自定义；value标签用户自定义；checked标签规定首次加载应当被选中；maxlength标签正整数，规定最大输入长度 -->
+            <!-- label标签 用于绑定一个表单元素，当点击label标签里的文字的时候浏览器会自动将焦点转到对应的表单元素上-->
+            <form action="">
+                用户名：<input type="text">
+                <input type="radio" id="sex n"><label for="sex n">男</label>
+                <input type="radio" id="sex v"><label for="sex v">女</label>
+            </form>
+            <!-- select下拉表单元素 -->
+            <form action="">
+            籍贯：
+            <select name="" id="">
+                <!-- 默认选项 -->
+                <option value="" selected="selected">贵州</option>
+                <option value="">山东</option>
+                <option value="">河南</option>
+            </select>
+            </form>
+            <!-- textarea文本域元素 特大号文本框
+            cols标签每行能显示的字符 rows显示多少行数-->
+            <form action="">
+                反馈:<textarea cols="20" rows="3">这里是默认的内容</textarea>
+            </form>
+            <!-- 提示信息 -->
+        </div>
+    </div>
+</body>
+</html>
