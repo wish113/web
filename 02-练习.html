@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS模块</title>
+    <!-- CSS是层叠样式表 也是一种标记语言 主要用于设置HTML页面中的文本内容、图片的外形以及版面的布局和外观显示样式-->
+    <!-- CSS主要的构成部分:选择器【基础选择器、复合选择器】、一条或多条声明 -->
+    <style>
+        /* 选择器{样式} */
+        /* 给谁改样式{改什么样式} */
+        /* 标签选择器 */
+        p {
+            /* 修改文字颜色 */
+            color: red;
+            /* 修改文字大小 */
+            font-size: 20px;
+        }
+
+        /* 类选择器 class 样式点定义，结构类（class）调用，一个或多个，开发最常用
+        */
+        .red-1 {
+            color: rgb(91, 28, 239);
+            width: 100px;
+            height: 100px;
+            background-color: brown;
+        }
+
+        .red-2 {
+            color: rgb(91, 28, 239);
+            width: 100px;
+            height: 100px;
+            background-color: rgb(234, 254, 17);
+        }
+
+        .red-3 {
+            color: rgb(91, 28, 239);
+            width: 100px;
+            height: 100px;
+            background-color: rgb(46, 211, 194);
+        }
+
+        /* 多类名 */
+        .red {
+            color: aqua;
+        }
+
+        .font35 {
+            font-size: 35;
+        }
+
+        /* ID选择器 #id名
+        样式#定义，结构id调用，只能调用一次，别人切勿使用*/
+        #pink {
+            color: pink;
+        }
+
+        /* 通配符选择器 用*调用 */
+        /* * {
+            color: blue;
+        } 将页面中所有的标签与元素都选中修改样式*/
+        /* CSS字体属性 */
+        /* font-family属性定义文本字体系列 
+        font-size属性定义文字大小
+        font-weight属性定义文字粗细
+        font-style:italic倾斜 normal不倾斜
+        字体复合属性
+        body{
+             /font: font-style font-weight font-size font-height font-family； 顺序不能颠倒，size family不能没有值/
+             font: 20px 'Microsoft yahi';
+        }*/
+        /* 文本颜色color 预设值 十六进制 RGB*/
+        /* 对齐文本
+        text-align：center水平居中 left right */
+        /* 装饰文本 text-decoration: none默认 underline下划线 line-through删除线 overline上划线等 */
+        /* 文本缩进 text-indent;20px 用来指定文本第一行的缩进*/
+        /* 行间距 line-height:26px 用来设置行间的距离*/
+        /* CSS引入方式  */
+        /* 内部样式表 style标签中 未完全分离 嵌入式样式*/
+        /* 外部样式表 样式单独写入css文件中，之后把css文件引入到HTML页面中 使用link标签引入 link href='css文件地址' */
+        /* 行内样式表 标签内部写入style属性 */
+
+
+        /* Emmet语法 提高HTML/CSS的编写速度*/
+        /* TAB键 
+        DIV*3 生成3个DIV标签
+        ul>li + tab键快速生成
+        p.one  + tab键快速生成有class的p标签
+        .dome$*5  + tab键快速生成有序的5个有CLASS的标签
+        div{&}*5  + tab键快速生成5个排序的div标签*/
+        /* 格式化代码  shift+alt+f*/
+
+        /* 后代选择器 */
+        ol li{
+            color: pink;
+        }
+
+        /* 子选择器 */
+        /* 元素1>元素2{样式声明} */
+
+        /* 并集选择器 选择多个标签*/
+        /* 元素1,元素2{样式声明} */
+        /* 元素1,元素2,.类 元素3{样式声明} */
+
+        /* 伪类选择器 用冒号来表示*/
+
+        /* 链接伪类 按照L V H A 的顺序进行声明*/
+        /* a：link 选择所有未被访问的链接
+        a:visited 选择所有已被访问的链接
+        a:hover 选择鼠标指针放于其上的链接
+        a:active 选择鼠标按下未弹起的链接 */
+
+        /* ：focus伪类选择器 用于选取获得焦点（光标）的表单元素 */
+        /* input：focus{} */
+        
+    </style>
+</head>
+
+<body>
+    <p>字体颜色与大小</p>
+    <p>p标签</p>
+    <p>p标签</p>
+    <p>p标签</p>
+    <div class="red-1">div标签</div>
+    <div class="red-2">div标签</div>
+    <div class="red-3">div标签</div>
+    <div class="red font35">duoleiming</div>
+    <div id="pink">ID选择器</div>
+    <ol>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ol>
+    <ui>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ui>
+</body>
+
+</html>
